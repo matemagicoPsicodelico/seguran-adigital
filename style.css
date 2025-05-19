@@ -1,5 +1,7 @@
+/* Importa as fontes Roboto e Roboto Mono do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap');
 
+/* Define variáveis de cor, fundo e fontes para reutilização ao longo do CSS */
 :root {
     --branco: white;
     --cor-de-fundo: #00162E;
@@ -10,55 +12,65 @@
     --roboto-mono: 'Roboto Mono', monospace;
 }
 
+/* Aplica peso de fonte 400 (normal) para todos os elementos */
 * {
     font-weight: 400;
 }
 
+/* Estiliza o corpo da página */
 body {
-    color: var(--branco);
-    background-color: var(--cor-de-fundo);
-    font-family: var(--roboto);
+    color: var(--branco); /* Cor do texto */
+    background-color: var(--cor-de-fundo); /* Cor de fundo */
+    font-family: var(--roboto); /* Fonte padrão do corpo */
 }
 
+/* Estiliza o título principal */
 .titulo-principal {
-    font-family: var(--roboto-mono);
+    font-family: var(--roboto-mono); /* Usa fonte monoespaçada */
     font-size: 32px;
 }
 
+/* Estiliza o subtítulo */
 .titulo-secundario {
     font-size: 24px;
 }
 
+/* Centraliza e espaça o bloco de título */
 .conteudo-titulo {
     text-align: center;
     margin-top: 80px;
 }
 
+/* Estiliza a área onde a senha é exibida */
 .conteudo-senha {
     margin-top: 80px;
     background: var(--fundo-senha);
     padding: 24px;
-    border-bottom: 6px solid var(--borda);
+    border-bottom: 6px solid var(--borda); /* Borda inferior azul */
 }
 
+/* Estiliza o campo de texto onde aparece a senha */
 #campo-senha {
     background-color: var(--fundo-senha);
     border: none;
     color: var(--branco);
-    font-family: var(--roboto-mono);
+    font-family: var(--roboto-mono); /* Fonte monoespaçada */
     font-size: 40px;
     width: 70%;
 }
 
+/* Remove a borda azul de foco no campo de senha */
 #campo-senha:focus {
     outline: none;
 }
 
+/* Limita a largura máxima do conteúdo e centraliza na página */
 .conteudo {
     max-width: 1200px;
     margin: 0 auto;
 }
 
+/* Estiliza o bloco de parâmetros de personalização da senha */
 .parametro {
     background-color: var(--fundo-texto);
     border: 2px solid var(--borda);
@@ -66,40 +78,47 @@ body {
     padding: 24px;
 }
 
+/* Estiliza o título da seção de parâmetros */
 .parametro-titulo {
     font-family: var(--roboto-mono);
     font-size: 28px;
 }
 
+/* Estiliza os subtítulos dos grupos de opções */
 .parametro-senha__titulo {
     font-size: 24px;
 }
 
+/* Organiza os elementos dos parâmetros em coluna (por padrão) */
 .parametro-coluna__senha {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
+/* Define largura e centralização de cada grupo de configuração da senha */
 .parametro-senha {
     width: 50%;
     margin: 0 auto;
 }
 
+/* Centraliza os botões "+" e "-" */
 .parametro-senha-botoes {
     display: flex;
     justify-content: center;
 }
 
+/* Estilo dos botões "+" e "-" */
 .parametro-senha__botao {
     background-color: var(--fundo-texto);
     color: var(--branco);
     border: 2px solid var(--borda);
     padding: 24px;
     font-size: 24px;
-    cursor: pointer;
+    cursor: pointer; /* Cursor em forma de mão ao passar por cima */
 }
 
+/* Estiliza o texto que mostra o número de caracteres da senha */
 .parametro-senha__texto {
     padding: 24px;
     border-top: 2px solid var(--borda);
@@ -108,16 +127,55 @@ body {
     font-size: 24px;
 }
 
+/* Estilo padrão para labels */
 label {
     font-size: 20px;
 }
 
+/* Estiliza as caixas de seleção (checkboxes) */
 .checkbox {
     width: 20px;
     height: 20px;
     cursor: pointer;
 }
 
+/* Barra de fundo usada para indicar a força da senha */
+.barra {
+    background-color: var(--fundo-senha);
+    height: 30px;
+    width: 100%;
+}
+
+/* Barra colorida que será posicionada sobre a barra de fundo indicando a força */
+.forca {
+    height: 30px;
+    position: relative;
+    bottom: 30px; /* Sobe a barra para sobrepor a base */
+}
+
+/* Estilizações diferentes para as classificações de força da senha */
+.fraca {
+    width: 25%;
+    background-color: #E71B32; /* Vermelho */
+}
+
+.media {
+    background-color: #FAF408; /* Amarelo */
+    width: 50%;
+}
+
+.forte {
+    background-color: #00FF85; /* Verde */
+    width: 100%;
+}
+
+/* Organiza os textos "Fraca", "Média", "Forte" na horizontal */
+.parametro-senha-textos {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Media query: se a tela for maior que 768px, os parâmetros ficam lado a lado */
 @media screen and (min-width: 768px) {
     .parametro-coluna__senha {
         flex-direction: row;
