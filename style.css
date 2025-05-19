@@ -1,16 +1,17 @@
 /* Importa as fontes Roboto e Roboto Mono do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap');
 
-/* Define variáveis de cor, fundo e fontes para reutilização ao longo do CSS */
+/* Define variáveis de cor com estética futurista */
 :root {
-    --branco: #F8F9FA; /* Um branco mais suave */
-    --cor-de-fundo: #0A192F; /* Azul escuro mais equilibrado */
-    --fundo-senha: #112D4E; /* Azul médio para destacar o campo de senha */
-    --fundo-texto: #1B3358; /* Azul intermediário para um fundo mais confortável */
-    --borda: #00A8E8; /* Azul brilhante para criar contraste e dar um toque vibrante */
+    --branco: #E0E6F8; /* Branco azulado futurista */
+    --cor-de-fundo: #08192D; /* Azul escuro, remetendo ao espaço profundo */
+    --fundo-senha: #112F41; /* Azul metálico com aspecto tecnológico */
+    --fundo-texto: #0B3D91; /* Azul vibrante inspirado em HUDs sci-fi */
+    --borda: #00FFFF; /* Ciano neon para realçar bordas */
     --roboto: 'Roboto', sans-serif;
     --roboto-mono: 'Roboto Mono', monospace;
 }
+
 
 
 /* Aplica peso de fonte 400 (normal) para todos os elementos */
