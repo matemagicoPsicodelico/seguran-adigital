@@ -3,14 +3,15 @@
 
 /* Define variáveis de cor com estética futurista */
 :root {
-    --branco: #E0E6F8; /* Branco azulado futurista */
-    --cor-de-fundo: #08192D; /* Azul escuro, remetendo ao espaço profundo */
-    --fundo-senha: #112F41; /* Azul metálico com aspecto tecnológico */
-    --fundo-texto: #0B3D91; /* Azul vibrante inspirado em HUDs sci-fi */
-    --borda: #00FFFF; /* Ciano neon para realçar bordas */
+    --branco: #F8F9FA; /* Branco frio com um toque futurista */
+    --cor-de-fundo: #1A1A2E; /* Azul profundo com um leve tom roxo, remetendo ao neon noturno */
+    --fundo-senha: #16213E; /* Azul elétrico escuro, tecnológico */
+    --fundo-texto: #0F3460; /* Azul intenso com vibração digital */
+    --borda: #FF007F; /* Rosa neon, dando um efeito chamativo e cyberpunk */
     --roboto: 'Roboto', sans-serif;
     --roboto-mono: 'Roboto Mono', monospace;
 }
+
 
 
 
