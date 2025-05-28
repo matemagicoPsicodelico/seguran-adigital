@@ -184,3 +184,10 @@ label {
         flex-direction: row;
     }
 }
+
+
+img {
+    width: 10px; /* Altere para o tamanho desejado */
+    height: auto; /* Mantém proporção */
+}
+
